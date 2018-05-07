@@ -91,27 +91,35 @@ function question5() {
 
 // Next question (question 6)
 function question6() {
-    var favoriteNumber;
+    var favoriteNumber = ['1', '5'];
     var counter = 0;
-    favoriteNumber = ['1'];
     var wrongAnswer = true;
 
     do {
-        var questionSixAnswer = Number('What is my favorite number 1 through 5?');
-        for (var j = 0; 1 < favoriteNumber.length; j++) {
-            if (questionSixAnswer === favoriteNumber[j]) {
-                break;
-            }
-        }
         counter++;
+        var questionSixAnswer = prompt('What are my favorite numbers 1 through 10?');
+        for (var j = 0; j < favoriteNumber.length; j++) {
+            if (questionSixAnswer == favoriteNumber[j]) {
+                wrongAnswer = false;
+                break;
+                console.log(questionSixAnswer)
+            }
+            if (wrongAnswer === true) {
+                alert('Your guess is incorrect you have ' + counter + ' tries.')
+                break;
+                console.log(alert)
+            }
 
-    } while (counter < 4 && wrongAnswer);
+        }
 
-    if (wrongAnswer) {
-        alert('You gave it for tries, unfortunately the answer is 1.')
+    } while (counter > 4 || wrongAnswer === false);
+    console.log(counter)
+
+    if (counter > 4) {
+        alert('You gave it four tries, unfortunately the answer is 1 and 5.')
         console.log('' + userName + ', has the wrong answer.');
     } else {
-        alert('It took you ' + counter + ' tries, my favorite number is 1 ' + userName + '')
+        alert('It took you ' + counter + ' tries, my favorite number is 1 and 5 ' + userName + '')
         console.log('' + userName + ', has the correct answer.');
     }
 } // end function question6()
