@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 var userName = prompt('Hi! What is your name!');
 // Ask for user's name
 
