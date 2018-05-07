@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: #9FAEB3;
     font-family: 'stonewash', cursive;
+    /*Makes the font cursive throughout the page*/
 }
 
 .topBanner {
