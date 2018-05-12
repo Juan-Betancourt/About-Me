@@ -25,13 +25,13 @@ function question1() {
     if (answer1 === 'yes' || answer1 === 'y') {
         // right answer
         alert('You got it right!!!');
-        document.write('1. ' + userName + 'That is correct. I have a brother.');
+        document.write('<br><center>1. ' + userName + ' that is correct. I have a brother.</center></br>');
         console.log('' + userName + ' got the correct answer to #1 (yes)');
         score++;
     } else {
         // wrong answer
         alert('Unfortunately, I do');
-        document.write('1. ' + userName + ' Unfortunately, that was wrong I do have a brother.')
+        document.write('<br><center>1. ' + userName + ' unfortunately, that was wrong I do have a brother.</center></br>')
         console.log('' + userName + ' The user got the wrong answer to #1 (no)');
     };
     // Tell user if they are wrong or right
@@ -45,12 +45,12 @@ function question2() {
     if (answer2 === 'yes' || answer2 === 'y') {
         //I enjoy music
         alert('You bet I love music, I am a D.J.!');
-        document.write('2. ' + userName + ' You bet I love music, I am a D.J.!');
+        document.write('<br><center>2. ' + userName + ' you bet I love music, I am a D.J.!</center></br>');
         console.log('' + userName + ' got the correct answer.');
         score++;
     } else { //user needs to understand music
         alert('Well that is incorrect, I enjoy music. ' + userName);
-        document.write('2. ' + userName + ' who doesn\'t enjoy music');
+        document.write('<br><center>2. ' + userName + ' who doesn\'t enjoy music</center></br>');
         console.log('' + userName + ' got the answer wrong');
     };
 }; // end function question2() 
@@ -62,12 +62,12 @@ function question3() {
     if (answer3 === 'yes' || answer3 === 'y') {
         //user knows that I enjoy going on vacation
         alert('You rock! I am looking forward to my next vacation in (Jamaica)');
-        document.write('3. ' + userName + ' You rock! I am looking forward to my next vacation in (Jamaica)');
+        document.write('<br><center>3. ' + userName + ' you rock! I am looking forward to my next vacation in (Jamaica)</center></br>');
         console.log(userName + ', knows that I enjoy vacations.');
         score++;
     } else { //user hates going on vacation
         alert(userName + '! no, that is not correct.');
-        document.write('3. ' + userName + '! no, that is not correct. We all love vacations');
+        document.write('<br><center>3. ' + userName + '! no, that is not correct. We all love vacations</center></br>');
         console.log(userName + ' hates the world.');
     }
 } // end function question3()
@@ -79,12 +79,12 @@ function question4() {
     if (answer4 === 'yes' || answer4 === 'y') {
         //user found out I enjoy board games
         alert('I do enjoy board games ' + userName + '');
-        document.write('4. ' + userName + ' I do enjoy board games');
+        document.write('<br><center>4. ' + userName + ' I do enjoy board games</center></br>');
         console.log('' + userName + ', found out that I enjoy board games.');
         score++;
     } else { //okay this user does not get out much. lol
         alert('' + userName + ', well I do enjoy board games.');
-        document.write('4. ' + userName + 'that was incorrect, I do enjoy music');
+        document.write('<br><center>4. ' + userName + ' that was incorrect, I do enjoy music</center></br>');
         console.log('' + userName + ' really hates the world.');
     }
 } // end function question4()
@@ -101,7 +101,9 @@ function question5() {
         alert('' + userName + ', thanks for getting to know me we still have two more questions.');
         console.log('5. ' + userName + 'loves the question game.');
     }
+    document.write('<br><center>5. We are skiiping question five</center></br>')
 } // end function question5()
+
 
 //Next question (question 6)
 function question6() {
@@ -110,7 +112,7 @@ function question6() {
     var wrongAnswer = false;
 
     while (counter < 5 && wrongAnswer === false) {
-        var questionSixAnswer = prompt('What are my favorite numbers 1 through 10?');
+        var questionSixAnswer = prompt('I have two favorite numbers 1 through 10 let\'s see if you can guess one?');
         for (var i = 0; i < favoriteNumber.length; i++) {
             if (questionSixAnswer === favoriteNumber[i]) {
                 wrongAnswer = true;
@@ -124,13 +126,13 @@ function question6() {
             console.log('wrongAnswer')
         } else {
             alert(userName + ' That is the correct number');
-            document.write('6. ' + userName + '' + questionSixAnswer + ' is correct');
+            document.write('<br><center>6. ' + userName + '' + questionSixAnswer + ' is correct</center></br>');
             counter += 5;
             score++;
         };
         if (counter === 4) {
             alert(userName + ' ,sorry my favorite numbers are 1 and 5');
-            document.write('6. ' + userName + ' ,sorry my favorite numbers are 1 and 5');
+            document.write('<br><center>6. ' + userName + ' ,sorry my favorite numbers are 1 and 5</center></br>');
             break;
         };
 
@@ -160,19 +162,19 @@ function question7() {
             alert(questionSevenAnswer + ' is my favorite type of food ' + userName);
             counter--;
             score++;
-            document.write('7. ' + questionSevenAnswer + ' is my favorite type of food ' + userName);
+            document.write('<br><center>7. ' + questionSevenAnswer + ' is my favorite type of food ' + userName + '</center></br>');
         };
         if (counter === 0) {
-            alert('I\'m sorry ' + userName + 'my favorite type of food is Pizza, Cheesburgers or hotdogs');
-            document.write('7. I\'m sorry ' + userName + 'my favorite type of food is Pizza, Cheesburgers or hotdogs');
+            alert('I\'m sorry ' + userName + ' my favorite type of food is Pizza, Cheesburgers or hotdogs');
+            document.write('<br><center>7. I\'m sorry ' + userName + ' my favorite type of food is Pizza, Cheesburgers or hotdogs </center></br>');
             break;
         };
     };
 }; // end function for question7()
 
 function displayCorrectAnswers() {
-    alert(userName + ' out of the six question you got ' + score + ' correct.');
-    document.write(userName + ' out of the 6 question you got ' + score + ' correct.');
+    alert(userName + ' out of the 6 questions you got ' + score + ' correct.');
+    document.write('<br><center>' + userName + ' out of the 6 question you got ' + score + ' correct.</center></br>');
 };
 
 question1();
