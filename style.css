@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #9FAEB3;
+    font-family: 'stonewash', cursive;
+    /*Makes the font cursive throughout the page*/
+}
+
+.topBanner {
+    top: 100%;
+    width: 100%;
+    height: 400px;
+    position: top;
+}
+
+.topBanner img {
+    top: 100%;
+    width: 100%;
+    height: 400px;
+}
+
+.text {
+    color: rgb(226, 222, 0);
+    font-size: 60px;
+    position: relative;
+    right: 50%;
+    transform: translate(100%, -160%);
+    text-shadow: 0 0 40px black;
+}
+
+.text2 {
+    color: rgb(182, 179, 179);
+    font-size: 40px;
+    position: relative;
+    right: 104%;
+    transform: translate(100%, -160%);
+    text-shadow: 10px 100px 80px black;
+}
+
+#dj {
+    border-radius: 20%;
+    border-color: aqua;
+    border-spacing: 20px;
+    right: 10%;
+    transform: translate(250%, -157%);
+    background: rgb(116, 115, 114);
+    width: 400px;
+    height: 400px;
+}
+
+td {
+    background-color: rgb(212, 212, 212);
+    padding: 15px;
+    border: 2px solid #000000;
+}
+
+table.one {
+    border-spacing: 5px 15px;
+}
+
+.heading {
+    color: rgb(95, 74, 74);
+}
